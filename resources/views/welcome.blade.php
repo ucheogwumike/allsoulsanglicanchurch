@@ -191,6 +191,8 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -220,6 +222,14 @@
         <h5>Location</h5>
         <p>Some representative placeholder content for the third slide.</p>
         <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{url('/easter.jpg')}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Easter</h5>
+        <p>Holy Easter Saturday Vigil</p>
+        <p><a href="#Services" class="btn btn-warning mt-3">Learn More</a></p>
       </div>
     </div>
   </div>
@@ -318,9 +328,27 @@
 
                   </div>
                 </div>
-              </div>
+               </div>
 
+               
             </div>
+            <div class="row"  style="margin-top: 3px;">
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-white text-center bg-dark pb-2">
+                  <div class="card-body">
+                    <i class="bi bi-subtract"></i>
+                    <h3 class="card-title">Holy Easter Saturday Vigil</h3>
+                    <p class="lead text-warning">
+                      10:00 pm promptly <br>
+                      <a href="https://zoom.us/j/97367034771?pwd=Mm9ZY0E5dlZCb0FBaWJIbThvSkRUQT09"><img src="{{url('/zoomus-ar21.svg')}}" alt=""></a> <br>
+                      Meeting ID: 973 6703 4771 | Passcode: 546733
+                    </p>
+
+                  </div>
+                </div>
+               </div>
+            </div>
+
           </div>
         </section>
 
