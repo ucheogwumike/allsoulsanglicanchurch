@@ -14,6 +14,10 @@ return [
     */
 
     'default' => env('FILESYSTEM_DISK', 'local'),
+    'user_images' => [
+    'driver' => 'public',
+    'root'   => public_path() . '/public/galleries/',
+],
 
     /*
     |--------------------------------------------------------------------------

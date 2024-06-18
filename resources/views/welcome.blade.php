@@ -177,6 +177,9 @@
           <a class="nav-link" href="#location">Location</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="{{url('/gallery')}}">Gallery</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
         
@@ -196,10 +199,10 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{url('/uncleDele.jpg')}}" class="d-block w-100" alt="...">
+      <img src="{{url('/uncleDele2.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption ">
         <h5>clergy</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus laboriosam beatae? Quod deleniti, impedit ducimus illum, beatae obcaecati sint accusantium labore laudantium, cupiditate cumque! Distinctio ut eius asperiores reprehenderit!</p>
+        <p>Meet our Clergy</p>
         <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
 
       </div>
@@ -208,11 +211,9 @@
       <img src="{{url('/prayer.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption">
         <h5>Worship with us</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod aut tempora dolor,
-           nobis perferendis libero laborum eligendi nisi rerum est commodi. Iure, rem voluptas?
-            Velit quibusdam iure aperiam accusantium!
+        <p> Join us for uplifting worship services filled with heartfelt music, meaningful prayers, and insightful sermons that connect the timeless truths of the Bible to our everyday lives.
         </p>
-        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+        <p><a href="#Services" class="btn btn-warning mt-3">Learn More</a></p>
 
       </div>
     </div>
@@ -220,8 +221,8 @@
       <img src="{{url('/bible.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption ">
         <h5>Location</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+        <p>Worship with us on sundays at 1818 Wooddale Blvd, Baton Rouge, LA 70806, USA</p>
+        <p><a href="#location" class="btn btn-warning mt-3">Learn More</a></p>
       </div>
     </div>
     <div class="carousel-item">
@@ -257,11 +258,10 @@
                 <div class="about-text">
                   <h2>Come As You Are</h2>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta rerum, accusantium quo magnam accusamus vitae qui, a laboriosam, deleniti natus ad veritatis nisi laudantium nihil minima 
-                    deserunt corporis praesentium perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere totam cupiditate quam quos maiores officia? Esse fuga, recusandae cupiditate vitae libero quae veritatis consequuntur quisquam magnam 
-                    sint culpa dolorum voluptas.
+                  We are delighted to welcome you to All Souls Anglican Church, a place where faith, hope, and love come together. Whether you are visiting for the first time, searching for a new church home,
+                   or returning to worship with us, we are honored to have you here.
                   </p>
-                  <a href="#" class="btn btn-warning">Learn More</a>
+                  <!-- <a href="#" class="btn btn-warning">Learn More</a> -->
                 </div>
               </div>
             </div>
@@ -276,8 +276,7 @@
                 <div class="section-header text-center pb-5">
                   <h2>Join Us</h2>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero debitis magnam rerum recusandae, totam soluta cum ipsa sunt est eligendi, at 
-                    quod voluptas facilis assumenda! Aperiam unde impedit optio velit.
+                  We are dedicated to spreading the love of Jesus Christ through worship, service, and fellowship. Our mission is to inspire and empower individuals to live out their faith in meaningful ways, making a positive impact in our community and beyond.
                   </p>
                 </div>
               </div>
@@ -358,8 +357,7 @@
               <div class="col-md-12">
                 <div class="section-header text-center pb-5">
                   <h2>The Clergy</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto magni assumenda suscipit 
-                    voluptatum nobis libero possimus iure neque vero quasi ad, quo animi reiciendis, similique dignissimos ex magnam molestiae?</p>
+                  <p>we are blessed to have a dedicated and compassionate team of clergy who are committed to guiding our community in faith, service, and spiritual growth. Their diverse backgrounds and experiences enrich our church and help us to serve our congregation and community with love and care.</p>
                 </div>
               </div>
             </div>
@@ -377,7 +375,47 @@
                     MRS LILLIAN ORJI 
                    </p>
 
-                    <button class="btn bg-warning text-dark">Learn More</button>
+                    <button class="btn bg-warning text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">Learn More</button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reverend Dele Adebamiji</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="img-area mb-4">
+                      <img src="{{url('/bishop.jpg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
+                    </div>
+                    <p>Bishop Felix Orji is the Diocesan Bishop of the Anglican Diocese of All Nations (ADAN).The Anglican Diocese of All Nations is home to parishes in the United States and Canada. 
+
+​
+
+Early in his life, Bishop Felix Orji made a decision to follow and serve Christ as the Savior and Lord of his life. The result of this decision as a teenager was a commitment to the call of God on his life to serve Christ as a minister of the gospel of God's grace. This led him to ordained ministry in the Anglican Church in Canada and the USA as a priest and now as a Bishop of the Anglican Church in North America (ACNA). He completed a BA degree with honors at the University of Ife in Ile-Ife, Nigeria, and received a Master’s degree at the University of Lagos, Nigeria. He earned a Diploma in Christian Studies from Regent College, Vancouver, BC, and a Master of Divinity from Vancouver School of Theology in Canada. Dr. Orji also earned a Doctorate in Leadership and Evangelism from Gordon-Conwell Theological Seminary at the Charlotte, North Carolina.
+
+​
+
+Bishop Orji who is currently the Bishop Protector of the Order of St. Benedict, was ordained in 1996 in the Diocese of New Westminster, Anglican Church of Canada. He served his curacy at All Saints Anglican Church in Burnaby, BC and afterwards as Associate rector at St. Johns Shaughnessy in Vancouver, BC, the largest evangelical Anglican parish in Canada. In 2004, he moved to the Diocese of the Rio Grande in the USA where he served a parish for a year. He was also the Coordinator of the Anglican Fellowship of the Southwest till 2010 which finally became the Diocese of the Southwest. 
+
+​
+
+In 2005, Dr. Orji became associate rector of St. Francis on the Hill in El Paso, and Rector from 2008 to August 2015. In September 2011, he was consecrated Bishop by the Anglican Church of Nigeria (Anglican Communion) to serve in the USA and Canada.
+
+​
+
+Our Bishop's vision and prayer is that the Holy Spirit will make it possible for us to go DEEPER with God, get CLOSER to one another, and go FURTHER in our impact in our community and the world.
+
+​
+
+The Right Reverend Dr. Felix Orji and his wife Lilian have four children, Cara, John, Jadon, and Justin. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
                   </div>
                 </div>
               </div>
@@ -394,7 +432,29 @@
                     MRS FELICIA ADEBAMIJI
                    </p>
                     </p>
-                    <button class="btn bg-warning text-dark">Learn More</button>
+                    <button class="btn bg-warning text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reverend Dele Adebamiji</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="img-area mb-4">
+                      <img src="{{url('/uncledele2.jpg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
+                    </div>
+                    <p>Reverend Dele Akintade Adebamiji is a Mediator and a practicing attorney in Baton Rouge, Louisiana .
+He was ordained into priesthood on November  19 2023 by the  Right Revert Doctor Felix C. Orji under the Anglican Diocese of All Nations, a diocese of the Anglican Church of North America(ACNA).
+He was born and raised in a stunch Anglican Family . His passion is to win souls to Christ and guide people in the way of righteousness to end in eternal rest. He loves to teach and discuss the word of God.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
                   </div>
                 </div>
               </div>
@@ -484,21 +544,21 @@
 
           <div class="row m-0">
             <div class="col-md-12 p-0 pt-4 p-4">
-              <form action="#" class="bg-light p-4.m-auto">
+              <form action="https://formsubmit.co/allsoulsanglicanchurch6@yahoo.com" class="bg-light p-4.m-auto" >
               <div class="row">
                 <div class="col-md-12">
                   <div class="mb-3">
-                    <input type="text" class="form-control" required placeholder="Full name">
+                    <input type="text"  class="form-control" required placeholder="Full name">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="mb-3">
-                    <input type="email" class="form-control" required placeholder="email">
+                    <input type="email"name="email"  class="form-control" required placeholder="email">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="mb-3">
-                    <textarea  rows="3" required class="form-control" placeholder="Your Message Here"></textarea>
+                    <textarea  rows="3" required name="message" class="form-control" placeholder="Your Message Here"></textarea>
                   </div>
                 </div>
                 <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
