@@ -199,7 +199,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{url('/uncleDele2.jpg')}}" class="d-block w-100" alt="...">
+      <img src="{{url('/uncledele2.jpg')}}" class="d-block w-100" alt="...">
       <div class="carousel-caption ">
         <h5>clergy</h5>
         <p>Meet our Clergy</p>
