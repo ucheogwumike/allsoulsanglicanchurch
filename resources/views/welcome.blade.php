@@ -471,7 +471,7 @@ He was born and raised in a stunch Anglican Family . His passion is to win souls
                     </div>
                     <h4 class="card-title">Layreaders</h4>
                     <p class="lead">Ayodeji Williams <br>
-                    &<br>
+                    &
                     Norah Wami
                    </p>
                     </p>
