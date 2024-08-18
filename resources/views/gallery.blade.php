@@ -261,9 +261,11 @@
   overflow: hidden;
   overflow-y: scroll;
   overflow-x: scroll;
-  
-
   background-color: #000;
+}
+
+@media only screen and (max-width: 767px){
+
 }
 
         </style>
@@ -425,8 +427,10 @@ container[0].setAttribute("style","display:none");
        let y = container[0].lastElementChild.naturalHeight;
        let x = container[0].lastElementChild.naturalWidth;
 
-       container[0].lastElementChild.setAttribute("width",x/2)
-       container[0].lastElementChild.setAttribute("height",y/2)
+       container[0].lastElementChild.setAttribute("width",x/4)
+       container[0].lastElementChild.setAttribute("height",y/4)
+
+       console.log(window.innerWidth,'y');
 
 
         nav[0].setAttribute("style","display:none");
