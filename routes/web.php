@@ -23,3 +23,9 @@ Route::get('/gallery',
 // }
 );
 
+Route::get('/ministries',function() {return view('ministries');}
+// function () {
+//     return view('gallery',[]);
+// }
+);
+

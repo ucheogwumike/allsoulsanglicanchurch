@@ -21,6 +21,7 @@
             body {
                 font-family: 'Nunito', sans-serif;
                 background: f1fbff;
+                /* width: 100%; */
             }
             .section-padding{
               padding: 100px 0;
@@ -93,10 +94,14 @@
               padding-top: 10px;
               height: 100vh;
               width: 100%;
+              background-color: #000;
               display: flex;
-              position: relative;
+              position: absolute;
+              top:0px;
               overflow: hidden;
+              overflow-y: scroll;
               mask-image: linear-gradient(to right);
+              z-index: 4;
               /* flex-wrap: wrap; */
               /* overflow-y: scroll; */
             }
@@ -107,9 +112,10 @@
               }
             }
             .list{
-              width: 700px;
-              height: 700px;
+              width: 500px;
+              height: 500px;
               position: absolute;
+              top: 50px;
               left: max(calc(690px * 39),100%);
               animation-name: scrollleft;
               animation-duration: 480s;
@@ -121,6 +127,7 @@
               align-items: center;
               justify-content: center;
               margin-top: 30px;
+              margin-bottom: 30px;
               padding-top: 70px;
               
             }
@@ -187,11 +194,56 @@
             
 
           }
+          .grid{
+            display: flex;
+            width:80%;
+            /* height: 100vh; */
+            flex-wrap: wrap;
+            /* background-color: #000; */
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            /* flex-direction: row; */
+          }
+
+          .disp{
+            width: 30%;
+            margin: 3px;
+          }
+          .button-cont{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+          }
+          .view_slide{
+            margin-left: 45%;
+            margin-right: 50%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 3px;
+
+            width: 135px;
+            background-color: #E4A11B;
+          }
+
+          .close{
+            color: white;
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+          }
+          .stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 
         </style>
          @vite(['resources/js/app.js', 'resources/css/app.scss'])
     </head>
-<body>
+<body class="body">
  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">
@@ -210,7 +262,7 @@
           <a class="nav-link" href="{{url('/#about')}}">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#{{url('/#clergy')}}">Clergy</a>
+          <a class="nav-link" href="{{url('/#clergy')}}">Clergy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('/#Services')}}">Services</a>
@@ -220,6 +272,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('/#location')}}">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url('/ministries')}}">Ministries</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('/gallery')}}">Gallery</a>
@@ -236,8 +291,23 @@
 
 <h3>welcome to our picture gallery</h3>
 
+<div class="button-cont">
+   <button class="view_slide">view slide show</button> 
+
+  
+</div>
+
+<div class="grid">
+
+@foreach ($arr[0] as $pic)
+<img src= "{{url($pic)}}"  alt="" class="disp" >
+@endforeach
+
+</div>
+
 <!-- <?=$i = 1?> -->
   <div class="gallery">
+    <div class="close">close</div>
   @foreach ($arr[0] as $pic)
   <img src= "{{url($pic)}}"  alt="" class="list" style="animation-delay: calc(480s/39 * (39 - <?=$i?>) * -1);">
   <!-- <?=$i++?> -->
@@ -248,7 +318,7 @@
 
 <footer class="bg-dark p-2 text-center">
   <div class="container">
-    <p class="text-white">All Rigts Reserved @All Souls Anglican Church</p>
+    <p class="text-white">All Rights Reserved @All Souls Anglican Church</p>
   </div>
 </footer>
 
@@ -258,4 +328,35 @@
         
        
     </body>
+    <script>
+      
+let but =  document.getElementsByClassName('button-cont');
+let body = document.getElementsByClassName('body');
+let nav = document.getElementsByClassName('navbar');
+let gallery = document.getElementsByClassName('gallery');
+let close = document.getElementsByClassName('close')
+      // let test = document.getElementsByTagName('h3')
+         but[0].addEventListener('click',()=>{
+          nav[0].setAttribute("style","display:none");
+          gallery[0].setAttribute("style","display:flex")
+          body[0].setAttribute("style","overflow:hidden")
+          
+          
+       })
+
+       close[0].addEventListener('click',()=>{
+        nav[0].setAttribute("style","display:flex");
+        gallery[0].setAttribute("style","display:none");
+        body[0].setAttribute("style","overflow-y:scroll");
+       })
+      // console.log(gallery);
+          
+      gallery[0].setAttribute("style","display:none")
+
+      function enlarge (e){
+       // width: 500px;
+      //  height: 500px;
+      }
+      
+    </script>
 </html>

@@ -177,6 +177,9 @@
           <a class="nav-link" href="#location">Location</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="{{url('/ministries')}}">Ministries</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="{{url('/gallery')}}">Gallery</a>
         </li>
         <li class="nav-item">
@@ -458,10 +461,50 @@ He was born and raised in a stunch Anglican Family . His passion is to win souls
                   </div>
                 </div>
               </div>
-            </div>
 
 
-          </div>
+              <div class="col-md-12 col-lg-6" style="margin-top: 7px;">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="{{url('/newclerg1.jpeg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
+                    </div>
+                    <h4 class="card-title">Pastor</h4>
+                    <p class="lead">Ayodeji Williams <br>
+                    &<br>
+                    Norah Wami
+                   </p>
+                    </p>
+                    <!-- <button class="btn bg-warning text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-lg-6" style="margin-top: 7px;">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="{{url('/newclerg2.jpeg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
+                    </div>
+                    <h4 class="card-title">Pastor</h4>
+                    <p class="lead">Rob Bauer <br>
+                    
+                   </p>
+                    </p>
+                    <!-- <button class="btn bg-warning text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button> -->
+                  </div>
+                </div>
+              </div>
+
+       </div>
+
+      
+
+
+
+
+
+
         </section>
 
         <section id="location" class="section-padding">
