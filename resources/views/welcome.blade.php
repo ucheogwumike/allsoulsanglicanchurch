@@ -469,7 +469,7 @@ He was born and raised in a stunch Anglican Family . His passion is to win souls
                     <div class="img-area mb-4">
                       <img src="{{url('/newclerg1.jpeg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
                     </div>
-                    <h4 class="card-title">Pastor</h4>
+                    <h4 class="card-title">Layreaders</h4>
                     <p class="lead">Ayodeji Williams <br>
                     &<br>
                     Norah Wami
@@ -486,7 +486,7 @@ He was born and raised in a stunch Anglican Family . His passion is to win souls
                     <div class="img-area mb-4">
                       <img src="{{url('/newclerg2.jpeg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
                     </div>
-                    <h4 class="card-title">Pastor</h4>
+                    <h4 class="card-title">Layreader</h4>
                     <p class="lead">Rob Bauer <br>
                     
                    </p>
