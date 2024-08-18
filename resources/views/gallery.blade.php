@@ -207,7 +207,7 @@
             .view_slide{
            
             /* margin-right: 40%; */
-            margin-left: 30%;
+            margin-left: 25%;
             
             
           }
