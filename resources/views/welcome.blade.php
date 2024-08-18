@@ -470,7 +470,7 @@ He was born and raised in a stunch Anglican Family . His passion is to win souls
                       <img src="{{url('/newclerg1.jpeg')}}" alt="" class="img-fluid" style="max-height:350px;width:100%;">
                     </div>
                     <h4 class="card-title">Layreaders</h4>
-                    <p class="lead">Ayodeji Williams <br>
+                    <p class="lead">Ayodeji Williams 
                     &
                     Norah Wami
                    </p>
