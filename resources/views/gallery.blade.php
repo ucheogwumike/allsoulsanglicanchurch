@@ -135,6 +135,17 @@
               margin-bottom: 10rem;
             }
 
+            .view_slide{
+            margin-left: 45%;
+            margin-right: 50%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 3px;
+
+            width: 135px;
+            background-color: #E4A11B;
+          }
+
             /* responsive */
 
 
@@ -155,6 +166,14 @@
             .img-area img{
               width:100%;
             }
+
+            .view_slide{
+            /* margin-left: 30px; */
+            
+            margin: auto;
+            
+            
+          }
           }
 
             @media only screen and (max-width: 767px){
@@ -191,6 +210,14 @@
             .card{
               margin-bottom: 30px;
             }
+
+            .view_slide{
+           
+            margin-right: 40%;
+            margin-left: 37%;
+            
+            
+          }
             
 
           }
@@ -218,16 +245,7 @@
             align-items: center;
             flex-direction: row;
           }
-          .view_slide{
-            margin-left: 45%;
-            margin-right: 50%;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding: 3px;
-
-            width: 135px;
-            background-color: #E4A11B;
-          }
+         
 
           .close{
             color: white;
@@ -354,6 +372,7 @@ let close = document.getElementsByClassName('close')
       gallery[0].setAttribute("style","display:none")
 
       function enlarge (e){
+        console.log(e.getAttribute('src'))
        // width: 500px;
       //  height: 500px;
       }
