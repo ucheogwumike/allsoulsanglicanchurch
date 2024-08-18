@@ -167,13 +167,6 @@
               width:100%;
             }
 
-            .view_slide{
-            /* margin-left: 30px; */
-            
-            margin: auto;
-            
-            
-          }
           }
 
             @media only screen and (max-width: 767px){
@@ -213,8 +206,8 @@
 
             .view_slide{
            
-            margin-right: 40%;
-            margin-left: 37%;
+            /* margin-right: 40%; */
+            margin-left: 30%;
             
             
           }
