@@ -229,6 +229,7 @@
           .disp{
             width: 30%;
             margin: 3px;
+            cursor: pointer;
           }
           .button-cont{
             width: 80%;
@@ -245,10 +246,24 @@
             position: absolute;
             right: 5px;
             cursor: pointer;
+            z-index: 20;
           }
           .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+.single-img{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top:0px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  
+
+  background-color: #000;
 }
 
         </style>
@@ -311,9 +326,13 @@
 <div class="grid">
 
 @foreach ($arr[0] as $pic)
-<img src= "{{url($pic)}}"  alt="" class="disp" >
+<img src= "{{url($pic)}}"  alt="" class="disp" onclick="enlarge(this)">
 @endforeach
 
+</div>
+<div class="single-img">
+<div class="close">close</div>
+<img src= ""  alt="" style="margin: auto;" >
 </div>
 
 <!-- <?=$i = 1?> -->
@@ -335,7 +354,7 @@
 
        
 
-
+<!-- <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="http://127.0.0.1:8000/galleries/Photo%20from%20Uche(19).jpg" width="211" height="158"> -->
         
        
     </body>
@@ -346,26 +365,75 @@ let body = document.getElementsByClassName('body');
 let nav = document.getElementsByClassName('navbar');
 let gallery = document.getElementsByClassName('gallery');
 let close = document.getElementsByClassName('close')
+let container = document.getElementsByClassName('single-img')
+let list = document.getElementsByClassName('list')
+
+
+
+     
+let scrolle;
+
+// window.onload(()=>{
+//   gallery[0].setAttribute("style","display:none")
+// container[0].setAttribute("style","display:none");
+// })
+   
+    
+gallery[0].setAttribute("style","display:none")
+container[0].setAttribute("style","display:none");
       // let test = document.getElementsByTagName('h3')
          but[0].addEventListener('click',()=>{
           nav[0].setAttribute("style","display:none");
           gallery[0].setAttribute("style","display:flex")
           body[0].setAttribute("style","overflow:hidden")
           
+          scrolle = window.scrollY;
+          
           
        })
 
-       close[0].addEventListener('click',()=>{
+       for (const it of close) {
+           
+            it.addEventListener('click',()=>{
+        console.log('abeg')
         nav[0].setAttribute("style","display:flex");
         gallery[0].setAttribute("style","display:none");
         body[0].setAttribute("style","overflow-y:scroll");
+        container[0].setAttribute("style","display:none");
+        console.log(scrolle)
+        window.scrollTo({top: scrolle, behavior: 'smooth' })
        })
+          }
+
+       
       // console.log(gallery);
           
       gallery[0].setAttribute("style","display:none")
+      container[0].setAttribute("style","display:none");
 
       function enlarge (e){
-        console.log(e.getAttribute('src'))
+        // console.log(e.getAttribute('src'))
+        let src = e.getAttribute('src');
+        let arr = src.split(' ')
+        src = arr.join('%20');
+
+       container[0].lastElementChild.setAttribute("src",src)
+       
+       scrolle = window.scrollY;
+
+       console.log(container[0].lastElementChild);
+       let y = container[0].lastElementChild.naturalHeight;
+       let x = container[0].lastElementChild.naturalWidth;
+
+       container[0].lastElementChild.setAttribute("width",x/2)
+       container[0].lastElementChild.setAttribute("height",y/2)
+
+
+        nav[0].setAttribute("style","display:none");
+          container[0].setAttribute("style",`display:flex;top:${scrolle}`)
+          body[0].setAttribute("style","overflow:hidden")
+          window.scrollTo({top: 0, behavior: 'smooth' })
+        
        // width: 500px;
       //  height: 500px;
       }
