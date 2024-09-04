@@ -82,6 +82,12 @@
               box-shadow: 15px 15px 40px rgba(0,0,0,0.15)
             }
 
+            /* #events{
+              display:flex;
+              align-items: center;
+              justify-content: center;
+              background-color: blue;
+            } */
 
 
             /* responsive */
@@ -181,6 +187,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('/gallery')}}">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -348,6 +357,30 @@
 
                   </div>
                 </div>
+               </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="events" class="services section-padding">
+          <div class="container">
+           
+              
+                <div class="section-header text-center pb-5">
+                  <h2>Upcoming Events</h2>
+                 
+                </div>
+              
+           
+
+            
+           
+                <div id="events" class="card mx-auto text-white text-center bg-dark pb-2 w-50 p-1 d-flex">
+                  
+                    
+                    <h3 class="card-title">Inaugural Harvest Festival</h3>
+                    <img src="{{{url('/updateevent.jpeg')}}}" alt="">
                </div>
             </div>
 
