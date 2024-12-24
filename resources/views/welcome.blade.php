@@ -343,7 +343,7 @@
 
                
             </div>
-            <div class="row"  style="margin-top: 3px;">
+            <!-- <div class="row"  style="margin-top: 3px;">
             <div class="col-12 col-md-12 col-lg-4">
                 <div class="card text-white text-center bg-dark pb-2">
                   <div class="card-body">
@@ -358,7 +358,7 @@
                   </div>
                 </div>
                </div>
-            </div>
+            </div> -->
 
           </div>
         </section>
@@ -372,15 +372,20 @@
                  
                 </div>
               
-           
+                <div id="events" class="card mx-auto text-white text-center bg-dark pb-2 w-50 p-1 d-flex mb-2">
+                  
+                    
+                    <h3 class="card-title">2024 Christmas Programs</h3>
+                    <img src="{{{url('/christmas1.jpg')}}}" alt="">
+               </div>
 
             
            
                 <div id="events" class="card mx-auto text-white text-center bg-dark pb-2 w-50 p-1 d-flex">
                   
                     
-                    <h3 class="card-title">Inaugural Harvest Festival</h3>
-                    <img src="{{{url('/updateevent.jpeg')}}}" alt="">
+                    <h3 class="card-title">Festival Of Nine Lessons & Carol</h3>
+                    <img src="{{{url('/christmas2.jpg')}}}" alt="">
                </div>
             </div>
 
